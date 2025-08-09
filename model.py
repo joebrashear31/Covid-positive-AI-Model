@@ -13,6 +13,7 @@ batch_size = 32
 epochs = 10
 
 # 1. DATA PREPROCESSING
+# from tensorflow
 datagen = ImageDataGenerator(rescale=1./255, validation_split=0.2)
 
 train_gen = datagen.flow_from_directory(
@@ -32,6 +33,9 @@ val_gen = datagen.flow_from_directory(
 )
 
 # 2. MODEL ARCHITECTURE
+# Convolutional layer - maxpool, conv layer, max pool, flatten for dense layer. Dense layer gives the output
+# Dropout gets rid of the extra neurons that don't fire, saving time/space.
+
 model = Sequential([
     Conv2D(32, (3, 3), activation='relu', input_shape=(*img_size, 3)),
     MaxPooling2D(2, 2),

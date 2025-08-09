@@ -1,3 +1,4 @@
+# importing the libraries
 import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
@@ -24,7 +25,7 @@ def load_and_predict(img_path):
     img_array = np.expand_dims(img_array, axis=0)
 
     prediction = model.predict(img_array)[0][0]
-    label = "COVID Positive" if prediction >= 0.5 else "Normal"
+    label = "Normal" if prediction >= 0.5 else "COVID Positive"
 
     # Display image and prediction
     plt.imshow(img)
