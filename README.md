@@ -107,9 +107,9 @@ Scripts reflect this mapping.
 ## 🙋 About Me
 
 Hi! I’m **Joe Brashear** 👋  
-💻 Software engineer turned AI enthusiast.  
+💻 Software engineer turned soon-to-be Med School Student and AI in Healthcare enthusiast.  
 🧠 Passionate about deep learning, medical imaging, and building impactful healthcare tools.  
-📍 Based in the USA 🇺🇸  
+📍 Based in the Tampa, FL USA 🇺🇸  
 💬 Connect with me on [GitHub](https://github.com/joebrashear31) or drop me a message for collaborations!
 
 ---
